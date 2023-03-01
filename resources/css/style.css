@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color-btn-header: #13183f;
+    --color-heading: #13183f;
+    --paragraph-color: #83869A;
+    --bg-color-icon-and-button: linear-gradient(360deg, hsla(322, 87%, 55%, 1) 0%, hsla(13, 100%, 64%, 1) 100%);
+    --card-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.05);
+    --footer-gradient: linear-gradient(#4851FF, #F02AA6);
+}
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background: linear-gradient(white, #f0f1ff);
+}
+
+/************* MAIN SECTION *************/
+
+/***** FIRST MAIN SECTION *****/
+
+.container {
+    display: grid;
+    grid-template-columns: min-content(200px);
+    grid-template-rows: auto-fit;
+    margin: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 1 / 2;
+    margin-bottom: 38px;
+}
+
+.first-btn {
+    font-size: 0.990rem;
+    font-weight: 600;
+    background-color: var(--bg-color-btn-header);
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 9rem;
+    transition: all 300ms ease-in-out;
+    z-index: 20;
+}
+
+.first-btn:hover {
+    cursor: pointer;
+    background-color: var(--paragraph-color);
+}
+
+.logo {
+    width: 6.2rem;
+}
+
+.main-left {
+    grid-row: 2 / 3;
+} 
+
+.heroRight__image {
+    max-width: 100%;
+}
+
+.heroRight {
+    text-align: center;
+}
+
+.main-left-header {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50.4px;
+    margin-bottom: 26px;
+    min-width: 200px;
+}
+
+.main-left-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--paragraph-color);
+}
+
+.btn {
+    font-size: 0.950rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--bg-color-icon-and-button);
+    width: 10.438rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 2.875rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+    background: var(--paragraph-color);
+}
+
+@media only screen and (max-width: 360px) {
+    .main-left-header {
+        font-size: 34px;
+    }
+    picture.heroRight {
+        text-align: left;
+    }
+    img.logo-light {
+        width: 4.5rem;
+    }
+    button.btn-footer {
+        width: 7.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.grid-container {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 55px 0px; 
+        grid-template-areas: 
+          "check-out"
+          "animation"
+          "design"
+          "photography"
+          "crypto"
+          "business";
+        margin: 0 1rem 4rem 1rem;
+    }
+    div.check-out {
+        padding: 2.1rem 3.5rem 1.5rem 1.5rem;
+        height: 5em;
+    }
+    div.container-footer {
+        padding: 0 1rem 0 1rem;
+    }
+    img.logo-light {
+        width: 4.5rem;
+    }
+    button.btn-footer {
+        width: 7.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    div.grid-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 60px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "check-out animation"
+          "design photography"
+          "crypto business";
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+    }
+    div.container-footer {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 550px auto;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    }
+
+    .main-left-header {
+        margin-top: 50px;
+    }
+
+    .header {
+        grid-column: span 2;
+    }
+
+    picture.heroRight {
+        text-align: left;
+    }
+
+    .heroRight__image {
+        position: absolute;
+        max-width: 700px;
+        height: auto;
+        top: -4.5rem;
+    }
+    div.grid-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 60px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "check-out animation"
+          "design photography"
+          "crypto business";
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+        margin-bottom: 4rem;
+    }
+    .check-out { 
+        grid-area: check-out; 
+    }  
+    .animation { 
+        grid-area: animation; 
+    }
+    .design { 
+        grid-area: design; 
+    }
+    .photography { 
+        grid-area: photography; 
+    }
+    .crypto { 
+        grid-area: crypto; 
+    }
+    .business { 
+        grid-area: business; 
+    }
+    div.container-footer {
+        padding: 0 1.25rem 0 1.25rem;
+    }
+}    
+
+@media only screen and (min-width: 1024px) {
+    div.container {
+        place-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-rows: auto 720px auto;
+        grid-template-columns: 40% 37%;
+        margin: 0 auto;
+    }
+    .main-left {
+        max-width: 460px;
+    }
+    .main-left-header {
+        margin-top: 150px;
+        font-size: 56px;
+        line-height: 70.56px;
+        font-weight: 800;
+    }
+    .main-left-paragraph {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    button {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+    picture.heroRight {
+        position: relative;
+        right: 0;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    img.heroRight__image {
+        position: absolute;
+        max-width: none;
+        top: -19rem;
+        left: -1.5rem;
+    }
+    div.grid-container {  
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 80px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "check-out animation design"
+          "photography crypto business";
+        justify-content: center; 
+        align-content: stretch; 
+        justify-items: center; 
+        align-items: stretch;
+        margin: 0 6rem 6rem 6rem;
+    }
+    div.container-footer {
+        padding: 0 6.5rem 0 6.5rem;
+    }
+}
+
+/***** SECOND MAIN SECTION *****/
+
+.grid-container {  
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "check-out animation design"
+      "photography crypto business";
+    justify-content: center; 
+    align-content: stretch; 
+    justify-items: center; 
+    align-items: stretch;
+    margin: 0 10rem 6rem 10rem;
+}
+
+.check-out,.animation,.design,.photography,.crypto,.business {
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+    height: auto;
+}
+  
+.check-out {
+    justify-self: start;
+    grid-area: check-out;
+    background: var(--bg-color-icon-and-button);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3.4rem;
+    padding-left: 1.2rem;
+    padding-right: 2rem;
+}
+  
+.animation {
+    justify-self: start;
+    grid-area: animation;
+}
+  
+.design {
+    justify-self: start;
+    grid-area: design;
+}
+  
+.photography {
+    justify-self: start;
+    grid-area: photography;
+}
+  
+.crypto {
+    justify-self: start;
+    grid-area: crypto;
+}
+  
+.business {
+    justify-self: start;
+    grid-area: business;
+}
+
+.icon {
+    position: relative;
+    top: -29px;
+    padding-left: 32px;
+}
+
+.heading {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 0.950rem;
+}
+
+.body {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--paragraph-color);
+}
+
+.link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f74780;
+}
+
+.grid-container-1 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "heading-1"
+      "body-1"
+      "link-1";
+    padding: 0px 32px 0px 32px;
+}
+  
+.heading-1 {
+    justify-self: start;
+    align-self: start;
+    grid-area: heading-1;
+}
+  
+.body-1 {
+    justify-self: start;
+    align-self: start;
+    grid-area: body-1;
+}
+  
+.link-1 {
+    justify-self: start;
+    align-self: center;
+    grid-area: link-1;
+}
+  
+
+/************* FOOTER SECTION *************/
+
+.container-footer {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo-white btn-started";
+    background-color: var(--bg-color-btn-header);
+    height: 70px;
+}
+  
+.logo-white {
+    justify-self: start;
+    align-self: center;
+    grid-area: logo-white;
+}
+  
+.btn-started {
+    justify-self: end;
+    align-self: center;
+    grid-area: btn-started;
+}
+
+.logo-light {
+    width: 6.2rem;
+}
+
+.btn-footer {
+    font-size: 0.990rem;
+    font-weight: 600;
+    background: var(--footer-gradient);
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 9rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
