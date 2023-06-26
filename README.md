@@ -1,16 +1,22 @@
-# Frontend Mentor - Skilled-e-learning-landing-page challenge
+# Frontend Mentor Challenge | Skilled-e-learning-landing-page
 
-![Design preview for the Skilled e-learning landing page coding challenge](./preview.jpg)
+![Design preview for the Skilled e-learning landing page coding challenge](./resources/images/Screenshot-of-my-own-design-1.png)
+![Design preview for the Skilled e-learning landing page coding challenge](./resources/images/Screenshot-of-my-own-design-2.png)
 
-**This is the solution of the project, and I can say this is the hardest challenge I have ever had to do in my life 😂🤣, but on the one hand, I am super happy to have submitted the project and I learned a lot of things about it, especially how to better position an image**
+This is the solution to the [Skilled e-learning landing page challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/built-with-pure-html-and-css-flexbox-css-grid-prLNqW9I4U). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
 
 ## Built with
 
-Pure HTML & CSS (Flexbox and CSS Grid)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-You can preview it here ==> <a href="https://blackfury117.github.io/Skilled-e-learning-landing-page/">Skilled e-learning landing page</a>
+Preview it here - [Skilled e-learning landing page](https://blackfury117.github.io/Skilled-e-learning-landing-page/) <br><br>
 
 ## Author
-Personal Website ==> <a href="https://blackfury117.github.io/">Black Fury</a> <br>
 
-Frontend Mentor ==> <a href="https://www.frontendmentor.io/profile/BlackFury117">@BlackFury117</a>
+- Website - [Black Fury](https://blackfury117.github.io/)
+- Frontend Mentor - [@BlackFury117](https://www.frontendmentor.io/profile/BlackFury117)
+- Twitter - [@blackfury117](https://twitter.com/blackfury117)
